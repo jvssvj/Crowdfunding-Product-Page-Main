@@ -1,0 +1,91 @@
+@media(max-width:750px) {
+    .bamboo_stand_title_modal > span,
+    .black_edition_title_modal > span,
+    .mohagany_title_modal >span {
+        font-size: 2rem;
+    }
+    
+    .bamboo_stand_title_modal > span::after,
+    .black_edition_title_modal > span::after,
+    .mohagany_title_modal >span:after {
+        font-weight: 400;
+        font-size: .8rem;
+    }
+}
+
+@media(max-width:620px) {
+    .title_modal_content span {
+        font-size: .9rem;
+    }
+}
+
+@media(max-width:570px) {
+    .title_modal_content {
+        align-items: start;
+        flex-direction: column;
+        gap: .5em;
+    }
+
+    .title_modal_content span {
+        margin-left: 2.9em;
+    }
+
+    .bamboo_stand_title_modal > span,
+    .black_edition_title_modal > span,
+    .mohagany_title_modal >span {
+        display: none;
+    }
+
+    .left_mobile {
+        display: block;
+        margin-top: 1em;
+    }
+
+    .toggle_bamboo_footer,
+    .toggle_black-edition_footer,
+    .toggle_mohagany_footer {
+        flex-direction: column;
+    }
+
+    .toggle_bamboo_footer > span,
+    .toggle_black-edition_footer > span,
+    .toggle_mohagany_footer > span {
+        margin-bottom: 1em;
+    }
+    .number_button_input_div {
+        flex-direction: column;
+    }
+}
+
+@media(max-width:355px) {
+    .modal_txt_title h3 {
+        font-size: 1.2rem;
+    }
+
+    label {
+        font-size: .9rem;
+    }
+
+    .title_modal_content span {
+        margin-left: 2.9em;
+        font-size: .8rem;
+    }
+    
+    input[type="radio"] {
+        width: 20px;
+        height: 20px;
+    }
+    
+    input[type="radio"]::before {
+        width: 10px;
+        height: 10px;
+    }
+
+    .no_reward_plan_modal p, 
+    .bamboo_stand_plan_modal p,
+    .black_edition_plan_modal p,
+    .mohagany_plan_modal p,
+    .modal_txt p {
+        font-size: .9rem;
+    }
+}

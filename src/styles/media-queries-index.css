@@ -1,0 +1,184 @@
+@media(max-width:750px) {
+    .price p, 
+    .total_backers p, 
+    .days p {
+        font-size: 1.5rem;
+    }
+
+    .price span, 
+    .total_backers span, 
+    .days span {
+        font-size: .8rem;
+    }
+}
+
+@media(max-width:620px) {
+    .body_bg {
+        content: url(../assets/images/image-hero-mobile.jpg);
+    }
+
+    .menu_content {
+        gap: 1em;
+    }
+
+    .infos {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .infos > .line {
+        width: 30%;
+        height: .005rem;
+        transform: rotate(0deg);
+    }
+
+    .price p, 
+    .total_backers p, 
+    .days p {
+        font-size: 2rem;
+    }
+
+    .price span, 
+    .total_backers span, 
+    .days span {
+        font-size: .9rem;
+    }
+
+    .mastercraft,
+    .card_infos,
+    .about,
+    .no_reward_plan,
+    .bamboo_stand_plan,
+    .black_edition_plan,
+    .mohagany_plan,
+    .modal_content {
+        padding: 1.5em;
+    }
+}
+
+/* Menu Mobile START*/
+@media(max-width:490px) {
+    .body_bg {
+        height: 350px;
+    }
+
+    .open_close__menu_btns {
+        position: relative;
+        z-index: 3;
+        display: block;
+    }
+
+    #menu-close-btn {
+        display: none;
+    }
+
+    #menu-container {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        max-width: 490px;
+        margin-top: 8em;
+        padding: 1em;
+        z-index: 2;
+    }
+
+    .menu_content {
+        flex-direction: column;
+        background-color: var(--White);
+        padding: 1.5em;
+        border-radius: .4rem;
+        position: relative;
+        gap: 3em;
+        animation: animation 0.2s ease-in;
+    }
+
+    li {
+        color: var(--Black);
+    }
+
+    li::after {
+        display: none;
+    }
+
+    .line-mobile1,
+    .line-mobile2 {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: .005rem;
+        background-color: var(--Dark-gray);
+    }
+
+    .line-mobile1 {
+        margin-top: 2.7em;
+    }
+
+    .line-mobile2 {
+        margin-top: 6.8em;
+    }
+
+    .mastercraft_txt h1 {
+        font-size: 1.5rem;
+    }
+    .mastercraft_footer {
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .bookmark {
+        width: unset;
+        max-width: unset;
+        padding-right: 0;
+    }
+
+    .bookmark span{
+        display: none;
+    }
+
+    .infos p {
+        font-size: 1.5rem;
+    }
+
+    .bamboo_title, 
+    .black_edition_title, 
+    .mahogany_title {
+        align-items: start;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .bamboo_footer, 
+    .black_edition_footer, 
+    .mahogany_footer {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .bamboo_footer span, 
+    .black_edition_footer span, 
+    .mahogany_footer span {
+        gap: .3em;
+        font-size: 1.5rem;
+    }
+
+    .bamboo_footer input, 
+    .black_edition_footer input, 
+    .mahogany_footer input {
+        margin-top: 1.5em;
+    }
+
+    .bamboo_footer input:hover, 
+    .black_edition_footer input:hover {
+        background-color: var(--Moderate-cyan);
+    }
+}
+
+@media(max-width:360px){
+    .mastercraft_footer {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+}
